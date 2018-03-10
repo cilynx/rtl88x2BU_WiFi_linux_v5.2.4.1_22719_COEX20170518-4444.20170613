@@ -4080,7 +4080,7 @@ halmac_usbphy_read_88xx(
 		HALMAC_REG_WRITE_8(pHalmac_adapter, 0xff0c, addr | BIT(6));
 		value = (u16)(HALMAC_REG_READ_32(pHalmac_adapter, 0xff0c) >> 8);
 	} else if (speed == HAL_INTF_PHY_USB2) {
-		if ((addr >= 0xE0) && (addr <= 0xFF))
+		if (addr >= 0xE0)
 			addr -= 0x20;
 		if ((addr >= 0xC0) && (addr <= 0xDF)) {
 			HALMAC_REG_WRITE_8(pHalmac_adapter, 0xfe40, addr);
