@@ -564,10 +564,11 @@ phydm_init_soft_ml_setting(
 {
 #if (RTL8822B_SUPPORT == 1)
 	if (*(p_dm_odm->p_mp_mode) == false) {
-		if (p_dm_odm->support_ic_type & ODM_RTL8822B)
+		if (p_dm_odm->support_ic_type & ODM_RTL8822B) {
 			/*odm_set_bb_reg(p_dm_odm, 0x19a8, MASKDWORD, 0xd10a0000);*/
 			phydm_somlrxhp_setting(p_dm_odm, true);
 			p_dm_odm->bsomlenabled = true;
+		}
 	}
 #endif
 #if (RTL8821C_SUPPORT == 1)
