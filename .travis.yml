@@ -2,5 +2,5 @@ language: c
 addons:
   apt:
     packages:
-      - linux-headers-amd64
+      - linux-headers-generic
 script: make
