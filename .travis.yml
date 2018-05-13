@@ -1,6 +1,10 @@
 language: c
+sudo: true
 addons:
   apt:
     packages:
       - linux-headers-generic
-script: make KVER=3.13.0-147-generic
+before_install:
+      - wget http://mirrors.kernel.org/ubuntu/pool/main/l/linux/linux-headers-4.15.0-20-generic_4.15.0-20.21_amd64.deb
+      - sudo dpkg -i linux-headers-4.15.0-20-generic_4.15.0-20.21_amd64.deb
+script: make KVER=4.15.0-20-generic
