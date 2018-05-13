@@ -1,6 +1,6 @@
 language: c
-addons:
-  apt:
-    packages:
-      - linux-headers-$(uname -r)
-script: make KVER=$(uname -r)
+sudo: true
+before_install:
+  - wget http://security.ubuntu.com/ubuntu/pool/main/l/linux-lts-xenial/linux-headers-4.4.0-101_4.4.0-101.124~14.04.1_all.deb
+  - sudo dpkg -i linux-headers-4.4.0-101_4.4.0-101.124~14.04.1_all.deb
+script: make KVER=4.4.0-101
