@@ -3,4 +3,4 @@ addons:
   apt:
     packages:
       - linux-headers-generic
-script: make KVER=3.13.0-145-generic
+script: make KVER=3.13.0-147-generic
