@@ -1,3 +1,8 @@
+# Newer version available!
+
+If you're looking for the latest and greatest, I've now patched up 
+[rtl88x2BU_WiFi_linux_v5.2.4.4_25643.20171212_COEX20171012-5044](/cilynx/rtl88x2BU_WiFi_linux_v5.2.4.4_25643.20171212_COEX20171012-5044) as well.
+
 # rtl88x2bu
 [![Build Status](https://travis-ci.org/cilynx/rtl88x2bu.svg?branch=master)](https://travis-ci.org/cilynx/rtl88x2bu)
 
