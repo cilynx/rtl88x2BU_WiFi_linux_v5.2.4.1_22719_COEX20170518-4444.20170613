@@ -6,3 +6,7 @@ Updated driver for rtl88x2bu wifi adaptors based on RTL88x2BU_WiFi_linux_v5.2.4.
 Build confirmed on kernels up to 4.16.0.
 
 See http://www.wolfteck.com/2018/02/22/wsky_1200mbps_wireless_usb_wifi_adapter/ for all the hows and whys around the updates.
+
+# Fair warning...
+
+I found the original source for this driver [on Dropbox](https://www.dropbox.com/s/mlrxtstclcgezf3/Wsky-AC1200-New%20Driver3.21-LINUX.zip) linked by the seller on [an Amazon listing](https://amzn.to/2suPAgV).  Don't you love how reputable these driver bundles are?  Nothing say "no one tampered with this after it left the OEM" like downloading from Dropbox / Baidu / etc.
